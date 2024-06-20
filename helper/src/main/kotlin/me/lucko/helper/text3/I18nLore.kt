@@ -104,11 +104,11 @@ private constructor() {
 
     @JvmName("argumentsListComponentGetter")
     @OverloadResolutionByLambdaReturnType // WTF ???
-    fun arguments(key: String, args: () -> List<ComponentLike>) = arguments(key, args())
+    inline fun arguments(key: String, args: () -> List<ComponentLike>) = arguments(key, args())
 
     @JvmName("argumentsComponentGetter")
     @OverloadResolutionByLambdaReturnType
-    fun arguments(key: String, args: () -> ComponentLike) = arguments(key, args())
+    inline fun arguments(key: String, args: () -> ComponentLike) = arguments(key, args())
 
     ////// MiniMessage String as Arguments //////
 
@@ -120,11 +120,11 @@ private constructor() {
 
     @JvmName("argumentsListStringGetter")
     @OverloadResolutionByLambdaReturnType
-    fun arguments(key: String, args: () -> List<String>) = arguments(key, args())
+    inline fun arguments(key: String, args: () -> List<String>) = arguments(key, args())
 
     @JvmName("argumentsStringGetter")
     @OverloadResolutionByLambdaReturnType
-    fun arguments(key: String, args: () -> String) = arguments(key, args())
+    inline fun arguments(key: String, args: () -> String) = arguments(key, args())
 
     ////// MiniMessage String as Arguments //////
 
@@ -161,7 +161,7 @@ private constructor() {
 
     @JvmName("argumentsManyListComponentGetter")
     @OverloadResolutionByLambdaReturnType
-    fun argumentsMany(key: String, items: () -> List<ComponentLike>) = argumentsMany(key, items())
+    inline fun argumentsMany(key: String, items: () -> List<ComponentLike>) = argumentsMany(key, items())
 
 
     ////// MiniMessage String as Arguments //////
@@ -171,7 +171,7 @@ private constructor() {
 
     @JvmName("argumentsManyListStringGetter")
     @OverloadResolutionByLambdaReturnType
-    fun argumentsMany(key: String, items: () -> List<String>) = argumentsMany(key, items())
+    inline fun argumentsMany(key: String, items: () -> List<String>) = argumentsMany(key, items())
 
     ////// MiniMessage String as Arguments //////
 

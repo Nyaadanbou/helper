@@ -10,7 +10,7 @@ description = "Provides Redis clients and implements the helper Messaging system
 project.ext.set("name", "helper-redis")
 
 dependencies {
-    val jedisVersion = "3.10.0"
+    val jedisVersion = "4.4.6"
     implementation("redis.clients", "jedis", jedisVersion) {
         exclude("org.slf4j", "slf4j-api")
     }
